@@ -2,15 +2,15 @@
 #pip install langchain-openai
 #pip install stream
 
-from dotenv import load_dotenv
-load_dotenv(override=True)
+#from dotenv import load_dotenv
+#load_dotenv(override=True)
 
 from langchain_openai import ChatOpenAI
 chat_model = ChatOpenAI()
 
-subject = "AI"
-result = chat_model.invoke(subject+"에 대한 시를 써줘")
-print(result.content)
+#subject = "AI"
+#result = chat_model.invoke(subject+"에 대한 시를 써줘")
+#print(result.content)
 
 import streamlit as st
 st.title("인공지능 시인")
